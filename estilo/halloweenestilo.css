@@ -1,0 +1,38 @@
+@font-face {
+    font-family:'letra';
+    src: url(fuentes/AngemurphyDemoBlackletter.ttf);
+}
+
+body {background-color: rgb(132, 132, 221);}
+#container {width: 1200px;
+            height: 800px;
+            background-image: url('../imagenes/6873635-halloween-wallpaper.jpg');
+            margin: auto;
+            position: relative;
+            background-size: cover;
+}
+
+#titulo {position:absolute;
+        top:5px;
+        left: 520px;
+        font-size: 3em;
+        font-family:'letra';
+        text-shadow:1px 1px 1px #36d37f;
+        color: teal;
+}
+
+#fantasma {position: absolute;
+            top:240px;
+            left:850px;
+            visibility:hidden;
+            cursor: crosshair;
+}
+
+#buho{/*border:1px solid white;*/
+        width: 60px;
+        height: 60px;
+        position:absolute;
+        top:130px;
+        left:590px;
+        cursor: pointer;
+}

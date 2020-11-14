@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Terrorifica Fiesta de Halloween</title>
+    <link rel="icon" type="imagenes/hoja.png") href="">
+    <link rel="stylesheet" href="estilo/halloweenestilo.css">
+    <script>
+        function mostrar(identificador){
+            document.getElementById(identificador).style.visibility="visible";
+        }
+        function ocultar(identificador){
+            document.getElementById(identificador).style.visibility="hidden";
+        }
+        function sonar(identificador){
+            document.getElementById(identificador).play('nana');
+        }
+        function parar(identificador){1
+            document.getElementById(identificador).pause('nana');
+        }
+    </script>
+</head>
+<body onload="sonar('nana')">
+    <div id="container">
+        <audio id="nana" controls>
+            <source src="sonidos/lullaby.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="nana">
+            <source src="sonidos/lullaby.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="grito">
+            <source src="sonidos/Fnaf1FullJumpscareSound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+        <p id="titulo">Terrorifica Fiesta De Halloween</p>
+        <img id="fantasma" src="imagenes/fantasma.gif" height="150" onclick="ocultar('fantasma');parar('grito')">
+        <div id="buho" onclick="mostrar('fantasma');sonar('grito')"></div>
+</body>
+</html>
